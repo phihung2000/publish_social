@@ -1,4 +1,4 @@
-﻿const fs = require('node:fs');
+const fs = require('node:fs');
 const path = require('node:path');
 const root = path.resolve(__dirname, '..');
 const config = JSON.parse(fs.readFileSync(path.join(root, 'temp/telegram-publisher-config.json'), 'utf8'));
@@ -102,10 +102,11 @@ for (const name of ['Telegram Reply', 'Queue Notification']) {
   const reply = nodes.find(item => item.name === name);
   reply.type = 'n8n-nodes-base.httpRequest';
   reply.typeVersion = 4.2;
+  reply.credentials = { httpHeaderAuth: { id: 'telegramReplyGateway', name: 'Telegram Reply Gateway' } };
   reply.parameters = {
     method: 'POST', url: 'http://image-tools:3000/telegram-reply', authentication: 'genericCredentialType', genericAuthType: 'httpHeaderAuth',
     sendBody: true, specifyBody: 'json',
-    jsonBody: '={{ { chat_id: $json.chatId, text: $json.text.slice(0, 3500).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"), parse_mode: "HTML", ' + (name === 'Telegram Reply' ? 'reply_to_message_id: $json.messageId, ' : '') + 'reply_markup: { inline_keyboard: ($json.calendarKeyboard?.rows ?? ($json.retryMessageId ? [{ row: { buttons: [{ text: "🔄 Đăng lại kênh lỗi", additionalFields: { callback_data: "queue_retry:" + $json.retryMessageId } }] } }] : [])).map(row => row.row.buttons.map(button => ({ text: button.text, ...button.additionalFields }))) } } }}',
+    jsonBody: '={{ { chat_id: $json.chatId, text: $json.text.slice(0, 3500).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;"), parse_mode: "HTML", ' + (name === 'Telegram Reply' ? 'reply_to_message_id: $json.messageId, allow_sending_without_reply: true, ' : '') + 'reply_markup: { inline_keyboard: ($json.calendarKeyboard?.rows ?? ($json.retryMessageId ? [{ row: { buttons: [{ text: "🔄 Đăng lại kênh lỗi", additionalFields: { callback_data: "queue_retry:" + $json.retryMessageId } }] } }] : [])).map(row => row.row.buttons.map(button => ({ text: button.text, ...button.additionalFields }))) } } }}',
     options: { timeout: 35000 },
   };
   reply.retryOnFail = false;

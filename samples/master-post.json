@@ -1,8 +1,8 @@
 {
-  "chatId": 123456789,
-  "service": "WEDDING",
-  "content": "Thiep cuoi online giup khach de dang xem dia diem,\nRSVP va album anh ngay tren dien thoai.",
-  "contentType": "GENERAL",
+  "chatId": 2125360645,
+  "service": "TREATMENT",
+  "content": "🩺 Bác sĩ thú y thời 4.0: Quản lý bệnh án điện tử, nói không với sổ tay thất lạc cùng PetX CMS (petx.io.vn)!\n\n✨ Tạo phiếu khám bệnh nhanh chóng, lưu lịch sử điều trị và kê toa thuốc rõ ràng.\n📦 Kiểm kê kho thuốc thực tế đối chiếu sổ sách, tự động tính chênh lệch thừa/thiếu.\n🛒 Quản lý bán hàng Pet Shop POS, quét mã vạch và in hóa đơn tức thì.\n📊 13 loại báo cáo chuyên sâu: doanh thu điều trị theo từng Bác sĩ, lời - lỗ (P&L).\n📱 Có app PetX Mobile trên điện thoại cho bác sĩ theo dõi từ xa.\n\n👉 Liên hệ tư vấn & cài đặt phần mềm PetX CMS:\n📞 Hotline/Zalo: 0396 476 443 | 0336 781 793\n📧 Email: nguyenphihung3800@gmail.com | exteam.solutions@gmail.com\n🌐 Trải nghiệm tại: https://petx.io.vn/\n\n#PetX #PetXCMS #PhanMemThuY #QuanLyPhongKhamThuY #PetClinic #BacSiThuY",
+  "contentType": "FEATURE",
   "platforms": ["FACEBOOK", "INSTAGRAM", "THREADS", "TIKTOK"],
   "status": "DRAFT"
 }

@@ -1,6 +1,35 @@
 [POST01]
-Thay dòng này bằng caption hoàn chỉnh của bài POST01, gồm emoji và hashtag.
+🩺 BÁC SĨ THÚ Y THỜI 4.0: BỆNH ÁN ĐIỆN TỬ, NÓI KHÔNG VỚI SỔ TAY THẤT LẠC!
+Mỗi lần khách đưa cún mèo tới tái khám, bạn lại mất cả chục phút lật từng cuốn sổ tìm xem lần trước tiêm vắc xin gì, liều lượng ra sao?
+🐾 Với Module Thông Tin Điều Trị của PetX CMS (https://petx.io.vn/):
+✔️ Tạo phiếu khám bệnh cực nhanh: lưu đầy đủ giống loài, tuổi, cân nặng, triệu chứng.
+✔️ Kê toa thuốc trực tiếp từ kho dược, tự động tính tổng tiền & in đơn rõ ràng.
+✔️ Tra cứu toàn bộ lịch sử các đợt khám trước chỉ với 1 cú click qua SĐT chủ nuôi.
+✔️ Có tính năng Khôi Phục Toa Thuốc an toàn khi lỡ tay xóa!
+👉 Hotline / Zalo tư vấn mua phần mềm: 0396 476 443 | 0336 781 793
+📧 Email: nguyenphihung3800@gmail.com | exteam.solutions@gmail.com - Website: https://petx.io.vn/
+#PetX #PetXCMS #PhanMemThuY #BenhAnThuCung #BacSiThuY #PetClinic
 
 [POST02]
-Thay dòng này bằng caption hoàn chỉnh của bài POST02.
-Có thể xuống dòng trong cùng một caption.
+📦 KIỂM KÊ KHO THUỐC THÚ Y KHÔNG CÒN LÀ CƠN ÁC MỘNG CUỐI THÁNG!
+Tồn kho trên sổ sách một đằng, thuốc trong tủ thực tế một nẻo? Không biết thuốc thất thoát do kê đơn hay hao hụt?
+💡 PetX CMS mang đến giải pháp Kiểm Kê Kho Hàng chuẩn xác (https://petx.io.vn/):
+📋 Nhập số lượng thực tế tại quầy, hệ thống tự động đối chiếu với số liệu sổ sách.
+📋 Báo cáo chênh lệch thừa/thiếu chi tiết theo từng loại thuốc, vắc xin, hàng hóa.
+📋 Cân bằng kho tự động chỉ với 1 thao tác, lưu lịch sử kiểm kê minh bạch.
+📋 Hỗ trợ điều chuyển thuốc giữa các chi nhánh phòng khám cực kỳ tiện lợi.
+👉 Đăng ký tư vấn & cài đặt PetX CMS: 0396 476 443 | 0336 781 793
+📧 Email: nguyenphihung3800@gmail.com | exteam.solutions@gmail.com - Website: https://petx.io.vn/
+#PetX #KhoThuocThuY #KiemKeKho #ThuocThuY #QuanLyPhongKhamThuY
+
+[POST03]
+📊 TÍNH HOA HỒNG BÁC SĨ THÚ Y MINH BẠCH - NẮM BẮT DOANH SỐ TỨC THÌ!
+Mỗi cuối tháng chủ phòng khám lại đau đầu ngồi cộng tay từng ca khám để tính % hoa hồng cho các bác sĩ thú y?
+✨ PetX CMS cung cấp hệ thống 13 báo cáo chuyên sâu (https://petx.io.vn/):
+👨‍⚕️ Thống kê số lượng ca khám và doanh thu điều trị chi tiết theo từng Bác sĩ.
+📈 Thống kê doanh số bán hàng, dịch vụ theo từng nhân viên phụ trách.
+💰 Báo cáo Lời - Lỗ (P&L) rõ ràng, phân tách dòng tiền điều trị và bán lẻ PetShop.
+📱 Có sẵn ứng dụng PetX Mobile App cho bác sĩ và chủ phòng khám theo dõi trên điện thoại!
+👉 Hotline / Zalo tư vấn: 0396 476 443 | 0336 781 793
+📧 Email: nguyenphihung3800@gmail.com | exteam.solutions@gmail.com - Website: https://petx.io.vn/
+#PetX #BaoCaoDoanhThu #HoaHongBacSi #PetClinicCMS #QuanLyThuY

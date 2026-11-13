@@ -6,7 +6,7 @@ if (!message || message.chat?.type !== 'private' ||
     !publisherConfig.allowedUserIds.includes(message.from?.id) ||
     !publisherConfig.allowedChatIds.includes(message.chat.id)) return [];
 
-const help = 'Gửi một ảnh hoặc video kèm caption để đăng ngay lên TikTok thieponline.org. Không cần duyệt.\nẢnh JPG, PNG, WEBP; video MP4, MOV, WEBM; tối đa 20 MB mỗi file. Gửi từng bài, không gửi album.\nNếu video tạo bằng AI, bắt đầu caption bằng /ai (phần này không được đăng).\nGửi /status để xem kết quả bài gần nhất.';
+const help = 'Gửi một ảnh hoặc video kèm caption để đăng bài quảng bá PetX (https://petx.io.vn). Không cần duyệt.\nẢnh JPG, PNG, WEBP; video MP4, MOV, WEBM; tối đa 20 MB mỗi file. Gửi từng bài, không gửi album.\nNếu video tạo bằng AI, bắt đầu caption bằng /ai (phần này không được đăng).\nGửi /status để xem kết quả bài gần nhất.';
 const context = { chatId: message.chat.id, messageId: message.message_id, shouldPublish: false, queryStatus: false };
 const reply = (text) => [{ json: { ...context, text } }];
 const command = (message.text ?? '').split(/\s/, 1)[0].split('@', 1)[0];

@@ -1,23 +1,23 @@
 {
   "services": {
-    "WEDDING": "Thiệp cưới",
-    "BIRTHDAY": "Sinh nhật",
-    "BABY": "Thôi nôi / đầy tháng",
-    "HOUSE_WARMING": "Tân gia",
-    "YEAR_END": "Tất niên",
-    "LONGEVITY": "Mừng thọ",
-    "EVENT": "Sự kiện khác"
+    "TREATMENT": "Thông tin & Điều trị (Khám bệnh, kê toa, bệnh án)",
+    "PETSHOP_POS": "Quản lý Bán hàng Pet Shop (POS, in bill)",
+    "INVENTORY": "Nhập thuốc & Kiểm kê kho hàng thực tế",
+    "BRANCH_TRANSFER": "Xuất chuyển kho giữa các chi nhánh",
+    "DEBT_FINANCE": "Quản lý Công nợ & Kế toán thu chi",
+    "DOCTOR_REPORT": "Thống kê doanh số theo từng Bác sĩ thú y",
+    "MOBILE_APP": "Ứng dụng PetX Mobile trên điện thoại"
   },
   "contentTypes": {
-    "DEMO": "Demo",
-    "FEATURE": "Tính năng",
-    "EDUCATION": "Mẹo / kiến thức",
-    "PROBLEM": "Vấn đề",
-    "VIRAL": "Viral",
-    "SALE": "Bán hàng",
-    "INSPIRATION": "Cảm hứng",
-    "TUTORIAL": "Hướng dẫn",
-    "COMPARISON": "So sánh"
+    "DEMO": "Demo tính năng phần mềm PetX",
+    "FEATURE": "Tính năng nổi bật (Bệnh án, POS, Kho, Báo cáo)",
+    "EDUCATION": "Mẹo quản lý phòng khám thú y hiệu quả",
+    "PROBLEM": "Nỗi đau ghi chép sổ sách & Giải pháp",
+    "VIRAL": "Chuyện nghề Bác sĩ thú y & Tình huống phòng khám",
+    "SALE": "Tư vấn & Mua bản quyền phần mềm PetX CMS",
+    "INSPIRATION": "Trải nghiệm thực tế từ các phòng khám thú y",
+    "TUTORIAL": "Hướng dẫn sử dụng các module PetX CMS",
+    "COMPARISON": "So sánh quản lý sổ tay/Excel vs PetX CMS"
   },
   "previewActions": {
     "APPROVE": "Duyệt",

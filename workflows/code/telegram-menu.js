@@ -23,17 +23,17 @@ const menu = (options, kind) => ({ rows: Object.entries(options).map(([value, la
   row: { buttons: [{ text: label, additionalFields: { callback_data: `sp:${session.id}:${kind}:${value}` } }] },
 })) });
 const showServices = () => {
-  text = 'Bạn muốn tạo nội dung cho loại thiệp nào?';
+  text = 'Bạn muốn tạo nội dung quảng bá cho phân hệ nào của PetX (petx.io.vn)?';
   keyboard = menu(services, 'service');
   menuKind = 'service';
 };
 const showTypes = () => {
-  text = `Loại thiệp: ${services[session.service]}\nBạn muốn tạo dạng nội dung nào?`;
+  text = `Phân hệ: ${services[session.service]}\nBạn muốn tạo dạng nội dung nào?`;
   keyboard = menu(contentTypes, 'type');
   menuKind = 'type';
 };
 const requestContent = () => {
-  text = `Loại thiệp: ${services[session.service]}\nDạng: ${contentTypes[session.contentType]}\n\nGửi nội dung bằng text hoặc gửi một ảnh/video có caption.\nDùng /cancel để hủy, /new để bắt đầu lại.`;
+  text = `Phân hệ: ${services[session.service]}\nDạng: ${contentTypes[session.contentType]}\n\nGửi nội dung bằng text hoặc gửi một ảnh/video có caption.\nDùng /cancel để hủy, /new để bắt đầu lại.`;
   if (session.editing) text += '\n\nKhi sửa: gửi text để giữ ảnh/video hiện có; gửi file mới có caption để thay ảnh/video. Gửi /preview để quay lại bản nháp hiện tại.';
 };
 const showPreview = () => {
@@ -135,7 +135,7 @@ if (!callback && (command === '/new' || command === '/start')) {
     showPreview();
   }
 } else {
-  text = 'Gửi /new để tạo bài mới: chọn loại thiệp → dạng nội dung → gửi bài → xem preview.';
+  text = 'Gửi /new để tạo bài mới: chọn phân hệ PetX → dạng nội dung → gửi bài → xem preview.';
 }
 
 session.lastUpdateId = update.update_id;
