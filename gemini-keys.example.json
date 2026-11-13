@@ -1,0 +1,18 @@
+{
+  "description": "Điền mã API Key từ 3 tài khoản Gemini Pro của bạn vào đây. Hệ thống sẽ tự động luân phiên (load-balance) và dự phòng (failover) giữa 3 tài khoản khi tạo bài viết.",
+  "accounts": [
+    {
+      "name": "Gemini Pro - Account 1",
+      "apiKey": "YOUR_GEMINI_API_KEY_1"
+    },
+    {
+      "name": "Gemini Pro - Account 2",
+      "apiKey": "YOUR_GEMINI_API_KEY_2"
+    },
+    {
+      "name": "Gemini Pro - Account 3",
+      "apiKey": "YOUR_GEMINI_API_KEY_3"
+    }
+  ]
+}
+
