@@ -1,0 +1,54 @@
+name: social-publisher
+
+services:
+  n8n:
+    image: ${N8N_IMAGE:-docker.n8n.io/n8nio/n8n:stable}
+    restart: unless-stopped
+    ports:
+      - "127.0.0.1:5688:5678"
+    environment:
+      TZ: Asia/Ho_Chi_Minh
+      GENERIC_TIMEZONE: Asia/Ho_Chi_Minh
+      N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS: "true"
+      N8N_WEBHOOK_URL: ${N8N_WEBHOOK_URL:-http://localhost:5678/}
+      WEBHOOK_URL: ${N8N_WEBHOOK_URL:-http://localhost:5678/}
+      N8N_PROXY_HOPS: "1"
+      N8N_DEFAULT_BINARY_DATA_MODE: filesystem
+      N8N_CONCURRENCY_PRODUCTION_LIMIT: "-1"
+      N8N_RESTRICT_FILE_ACCESS_TO: /files
+      N8N_FORMDATA_FILE_SIZE_MAX: "100"
+      NODE_FUNCTION_ALLOW_BUILTIN: crypto,fs
+    volumes:
+      - n8n_data:/home/node/.n8n
+      - ./downloads/buffer-media:/files
+
+  media-gateway:
+    image: ${N8N_IMAGE:-docker.n8n.io/n8nio/n8n:stable}
+    restart: unless-stopped
+    entrypoint: ["node", "/gateway/server.cjs"]
+    environment:
+      MEDIA_ROOT: /files
+      UPSTREAM: http://n8n:5678
+      PORT: "5678"
+    ports:
+      - "127.0.0.1:5678:5678"
+    volumes:
+      - ./downloads/buffer-media:/files:ro
+      - ./services/media-gateway/server.cjs:/gateway/server.cjs:ro
+    depends_on:
+      - n8n
+
+  image-tools:
+    build: ./services/image-tools
+    restart: unless-stopped
+    init: true
+    mem_limit: 1280m
+    cpus: 1
+    read_only: true
+    tmpfs:
+      - /tmp:size=128m
+    security_opt:
+      - no-new-privileges:true
+
+volumes:
+  n8n_data:

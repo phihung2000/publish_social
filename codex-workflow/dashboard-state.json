@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "task": {
+    "id": "buffer-media-content-length",
+    "title": "Buffer tải được ảnh lúc đăng",
+    "goal": "TikTok, Facebook và Threads không còn lỗi media vì file public thiếu Content-Length",
+    "status": "working",
+    "criteria": [
+      "GET/HEAD media có Content-Length đúng byte, đúng MIME và đúng tên file",
+      "Bài đã lỗi không bị đăng lại khi chưa bấm nút"
+    ]
+  },
+  "roles": {
+    "lead": {
+      "status": "working",
+      "action": "Đã thêm media-gateway; chưa chạy được kiểm tra và chưa bật trên máy",
+      "phase": "verification",
+      "updated_at": "2026-11-11T15:10:00+07:00",
+      "next": "Chạy node scripts/start-telegram.cjs rồi xác nhận header media",
+      "files": [
+        "services/media-gateway/server.cjs",
+        "scripts/check-media-gateway.cjs",
+        "scripts/repair-buffer-media.cjs",
+        "compose.yaml",
+        "scripts/start-telegram.cjs",
+        "docs/CONTENT_QUEUE.md"
+      ],
+      "checks": [
+        {
+          "status": "NOT_RUN",
+          "label": "node scripts/check-media-gateway.cjs — shell phiên thoát ngay"
+        },
+        {
+          "status": "NOT_RUN",
+          "label": "node scripts/start-telegram.cjs — gateway chưa được bật"
+        }
+      ]
+    }
+  },
+  "events": [
+    {
+      "at": "2026-11-11T15:10:00+07:00",
+      "role": "lead",
+      "message": "Đã thêm media-gateway; chưa chạy được kiểm tra và chưa bật trên máy"
+    }
+  ],
+  "updated_at": "2026-11-11T15:10:00+07:00"
+}
